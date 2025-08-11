@@ -1,16 +1,6 @@
+
 @import url('https //fonts.googleapis.com/css family=poppins');
 
-
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins',sans-serif;
-    box-sizing: border-box;
-}
-
-html{
-    overflow-x: hidden;
-}
 
 body{
     width: 100%;
@@ -280,55 +270,92 @@ section{
     box-shadow: 0 0 50px rgb(109,67,0);
 }
 
-@media (max-width:884px) {
-    body{
-        overflow-y: visible;
-    }
 
-    nav .logo{
-        position: absolute;
-        top: 16px;
-        left: 15px;
-        font-size: 1.5rem;
-    }
-    
-    .main-container{
-        display: flex;
-        flex-direction: column;
-    }
+@media (max-width: 768px) {
+  nav .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
 
-    .nav-container .links{
-       display: none;
+  .links {
+    display: none;
+  }
 
-    }
+  .hamburg {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #222;
+    margin-left: auto;
+  }
 
-    .hamburg,.cancel{
-        display: block;
-    }
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100vw;
+    background: #fff;
+    transform: translateY(-500px);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
 
-    .main-container .content{
-        width: 80%;
+  .dropdown.active{
+    display: block ;
+  }
 
-    }
+  .dropdown .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+  }
 
-    .social-links{
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 1.5rem;
-    }
+  .dropdown .cancel {
+    display: block;
+    font-size: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
 
-    .cancel{
-        color: white;
-    }
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
 
-    .main-container .image{
-        width: 80%;
-        margin-bottom: 0px;
-    }
-    
+  .main-container .image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .content h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .content p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
 }
 
+/* Show dropdown when active */
+.dropdown.active {
+  transform: translateY(0px);
+}
 
-
-
-
+/* Hide hamburger on desktop */
+.hamburg {
+  display: none;
+}

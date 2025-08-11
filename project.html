@@ -4,97 +4,8 @@
     <meta charset="UTF-8">
     <title>My Portfolio Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> <!-- Optional: link to your CSS file -->
-    <style>
-        body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f7f9fa;
-    color: rgb(106,67,0);
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background: rgb(106,67,0);
-    color: #fff;
-    padding: 30px 0 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0 0 10px 0;
-    font-size: 2.5em;
-    letter-spacing: 2px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: 500;
-    transition: color 0.2s;
-}
-
-nav a:hover {
-    color: #ffd700;
-}
-
-main {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-section {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(44,62,80,0.15);
-    margin-bottom: 30px;
-    padding: 30px 25px;
-    transition: box-shadow 0.2s;
-}
-
-section:hover {
-    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.15);
-}
-
-section h2 {
-    margin-top: 0;
-    color: rgb(106,67,0);
-    font-size: 1.5em;
-}
-
-section p {
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
-section a {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 8px 20px;
-    background: #2d3e50;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background 0.2s;
-}
-
-section a:hover {
-    background: #ffd700;
-    color: #2d3e50;
-}
-
-footer {
-    background: rgb(106,67,0);
-    color: #fff;
-    text-align: center;
-    padding: 18px 0;
-    margin-top: 40px;
-    font-size: 1em;
-}
-    </style>
+    <link rel="stylesheet" href="project.css">
+    
 </head>
 <body>
     <header>
@@ -102,10 +13,63 @@ footer {
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Me</a>
-            <a href="index.html">Contact</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
     <main>
+        <section>
+            <div class="skill-container">
+                <h2> My <b>Skills</b></h2>
+                <div class="skills-list">
+                  <div class="skill-item">
+                    <span>HTML</span>
+                    <div class="skill-bar"><div class="skill-level html">95%</div></div>
+                  </div>
+                  <div class="skill-item">
+                    <span>CSS</span>
+                    <div class="skill-bar"><div class="skill-level css">90%</div></div>
+                  </div>
+                  <div class="skill-item">
+                    <span>JavaScript</span>
+                    <div class="skill-bar"><div class="skill-level js">85%</div></div>
+                  </div>
+                  <div class="skill-item">
+                    <span>React</span>
+                    <div class="skill-bar"><div class="skill-level react">80%</div></div>
+                  </div>
+                  <div class="skill-item">
+                    <span>Node.js</span>
+                    <div class="skill-bar"><div class="skill-level node">70%</div></div>
+                  </div>
+                  <div class="skill-item">
+                    <span>Git/Github</span>
+                    <div class="skill-bar"><div class="skill-level git">85%</div></div>
+                  </div>
+                  <div class="skill-item">
+                    <span>VS Code</span>
+                    <div class="skill-bar"><div class="skill-level vscode">90%</div></div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <h2>Featured Projects</h2>
+        <p>Here are some of my <br>
+            <b> Notable Projects</b></p>
+
+             <section>
+            <h2><b>Food Delivery App</b></h2>
+            <p>A user-friendly food delivery app that connects customers with local restaurants. </br>
+                Designed with a clean interface for quick and easy ordering of meals.</p>
+            <a href="https://foood-ie.netlify.app/">View Project</a>
+        </section>
+
+          <section>
+            <h2><b>Quiz Website</b></h2>
+            <p>A dynamic quiz website that allows user test their knowledge on various topics.<br>
+            Features include multiple-choice questions,instant feedback and a user friendly designed for both fun and learning</p>
+            <a href="https://crack-your-brain.netlify.app/">View Project</a>
+        </section>
+
         <section>
             <h2><b>WeatherPulse</b></h2>
             <p>A user-friendly weather app that delivers real-time weather updates, forecasts, and location-based information. </br>
@@ -139,11 +103,10 @@ footer {
             <a href="https://animatio.netlify.app/">View Project</a>
         </section>
 
-        <h2>For more projects,<a href="https://github.com/Sdboot">click here</a> </h2>
-        <!-- Add more project sections as needed -->
+        <h2><a href="https://github.com/Sdboot">View Github Repositories</a> </h2>
     </main>
     <footer>
-        <p>&copy; 2025 Deborah</p>
+        <p>&copy; 2025 Deborah <br> All projects built with ❤️ by Salako Deborah</p>
     </footer>
 </body>
 </html>
