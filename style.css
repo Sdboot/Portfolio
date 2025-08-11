@@ -350,12 +350,11 @@ section{
   }
 }
 
-/* Show dropdown when active */
 .dropdown.active {
   transform: translateY(0px);
 }
 
-/* Hide hamburger on desktop */
+
 .hamburg {
   display: none;
 }
