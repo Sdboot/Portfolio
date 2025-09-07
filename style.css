@@ -435,6 +435,10 @@ section{
         margin: 0 !important;
         padding: 0 !important;
     }
+    .about-flex-row .about-flex {
+        min-width: 120px;
+        flex: 0 0 auto;
+    }
     .about-flex-row::-webkit-scrollbar {
         display: none;
     }
