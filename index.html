@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    <title>Deborah's Portfolio</title>
+    <title>Hexadeb!</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
@@ -13,29 +13,18 @@
     <nav>
         <div class="nav-container">
             <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
-                <span> Salako Deborah</span>
+                <span> Deborah</span>
             </div>
             <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="project.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about-container">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#project-container">Projects</a></div>
                 <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="contact.html">Contact</a></div>
             </div>
-            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-        </div>
-    
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i> 
-            </div>
-            <div class="dropdown">
-            <div class="links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="project.html">Skills</a>
-                <a href="contact.html">Contact</a>
-        </div>
+    </div>
     </nav>
 <section>
-    <div class="main-container">
+    <div id="home" class="main-container">
         <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
             <img src="mi ne.jpg" alt="">
         </div>
@@ -46,39 +35,149 @@
                 <b>Career Goals: </b><br>
                 Contribute to a team that values growth, learning, and professional development.
             </p>
-            <div class="social-links" data-aos="flip-down" data-aos-duration="1000">
-                <a href="https://github.com/Sdboot"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.youtube.com/@hexadeb"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.linkedin.com/in/deborah-salako-539a52258"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://x.com/salako_deborah?t=KA2w8tDbXIScGNgGRtBs3A&s=09"><i class="fa-brands fa-x-twitter"></i></a>
-            </div>
+            
             <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000">
-                <button>Download CV</button>
+        
+                <button><a href="contact.html" >Hire Me</a></button>
             </div>
         </div>
     </div>
 
+    <!-- About Section -->
+    
+    <div id="about-container" class="about-container">
+            <h1>What you need to know</h1>
+            <p>I'm a Creative Front-End Developer.<br>I find joy in crafting seamless user experiences and bringing ideas to life through code.<br><br>
+                In creating user-friendly,clean and responsive websites,i use HTML,CSS,JAVASCRIPT,Tailwind CSS and React.JS.<br><br>
+
+                Currently,i'm pursuing a front-end developer role in a collaborative and dynamic team,
+                where I can leverage my skills to create innovative digital experiences.<br><br>
+                With a strong portfolio showcasing my skills in HTML, CSS, JavaScript, I am confident in my ability to contribute to a dynamic team. </br>
+            </p></div>
+     <div class="about-flex-row">
+        <div class="about-flex" data-aos="slide-right">
+            <img src="js.jfif" alt="javascript">
+            <h3>JavaScript</h3>
+        </div>
+        <div class="about-flex" data-aos="slide-right">
+            <img src="react.png" alt="react">
+            <h3>React</h3>
+        </div>
+        <div class="about-flex" data-aos="slide-right">
+            <img src="html.jfif" alt="html">
+            <h3>HTML</h3>
+        </div>
+        <div class="about-flex" data-aos="slide-right">
+            <img src="css.jfif" alt="css">
+            <h3>CSS</h3>
+        </div>
+        <div class="about-flex" data-aos="slide-right">
+            <img src="tailwind.png" alt="Tailwind">
+            <h3>Tailwind Css</h3>
+        </div>
+        <div class="about-flex" data-aos="slide-right">
+            <img src="git pic.png" alt="Git">
+            <h3>Git</h3>
+        </div>
+        <div class="about-flex" data-aos="slide-right">
+            <img src="github.png" alt="Github">
+            <h3>Github</h3>
+        </div>
+        <div class="about-flex">
+            <img src="vscode.png" alt="Vscode">
+            <h3>VScode</h3>
+        </div>
+        <div class="about-flex">
+            <img src="node.png" alt="node.js">
+            <h3>Node.js</h3>
+        </div>
+       </div>
+
+    <!-- Projects Section -->
+
+    <div id="project-container" class="project-container">
+            <h1>Projects I Have Built and Designed</h1> 
+        </div>
+        <div class="list">
+        <div class="projects-list">
+                    <img src="Project 1.jpg" alt="Medical Clinic Project">
+                    <h2><b>Medical Clinic </b></h2>
+                    <p>A user-friendly medical clinic website designed with a clean interface for easy navigation and access to important health information.</p>
+                    <a href="https://akinolu-faith-clinic.netlify.app/">View Project</a>
+                    </div>
+
+                <div class="projects-list">
+                    <img src="Project 2.jpg" alt="Food delivery">
+                    <h2><b>Foodie</b></h2>
+                    <p>A user-friendly food delivery app that connects customers with local restaurants. <br>
+                        Designed with a clean interface for quick and easy ordering of meals.</p>
+                    <a href="https://foood-ie.netlify.app/">View Project</a>
+                    </div>
+                <div class="projects-list">
+                    <img src="Project 3.jpg" alt="Quiz Project">
+                    <h2><b>Quiz </b></h2>
+                    <p>A dynamic quiz website that allows user test their knowledge on various topics with
+                        instant feedback and a user friendly designed for both fun and learning</p>
+                    <a href="https://crack-your-brain.netlify.app/">View Project</a>
+                    </div>
+                <div class="projects-list">
+                    <img src="Project 4.jpg" alt="WeatherPulse">
+                    <h2><b>WeatherPulse</b></h2>
+                    <p>A user-friendly weather app that delivers real-time weather updates, forecasts, and location-based information. <br>
+                        Designed with a clean interface for quick and easy access to current and future weather conditions.</p>
+                    <a href="https://weatherpulse-hub.netlify.app/">View Project</a>
+                    </div>
+                <div class="projects-list">
+                    <img src="Project 5.jpg" alt="School">
+                    <h2><b>A School Website</b></h2>
+                    <p>A simple and intuitive weather app that provides real-time weather updates, forecasts, and location-based weather information. <br>
+                        Built with a clean interface for easy access to current conditions and future forecasts.</p>
+                    <a href="https://soft-monstera-32d7cc.netlify.app/">View Project</a>
+                    </div>
+                <div class="projects-list">
+                    <img src="Project6.jpg" alt="profile">
+                    <h2><b>A personal profile website</b></h2>
+                    <p>A clean and modern personal website showcasing my background, skills, and projects.<br>
+                        Designed to highlight my professional journey and make it easy for visitors to connect with me.</p>
+                    <a href="http://debs-portfolioo.netlify.app">View Project</a>
+                    </div>
+                <div class="projects-list">
+                    <h2><b>A Car Website</b></h2>
+                    <p>A sleek and informative website for car enthusiasts, featuring details about various car models, specifications, and reviews. <br>
+                        Designed for easy browsing and a visually engaging experience.</p>
+                    <a href="http://iykerides.netlify.app/">View Project</a>
+                    </div>
+                <div class="projects-list">
+                    <h2><b>My Practice Website</b></h2>
+                    <a href="https://animatio.netlify.app/">View Project</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <footer>
+        <div class="side-1">
+        <h1>Deborah</h1>
+        <p>Build user-friendly,clean and responsive websites</p>
+        <h2><a href="https://github.com/Sdboot">Code <i class="fa-brands fa-github"></i></a> </h2>
+           </div>
+           <div class="side-2">
+        <h3>Connect with me</h3>
+        <div class="social-links">
+                <a href="https://github.com/Sdboot"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/Sdboot"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@hexadeb"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/deborah-salako-539a52258"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com/salako_deborah?t=KA2w8tDbXIScGNgGRtBs3A&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            </div>
+    </footer>
+    </body>
     
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script src="index.js"></script>
 <script>
   AOS.init();
   </script>
-  <script>
 
-    function hamburg(){
-        const navbar = document.querySelector(".dropdown");
-        if(navbar) navbar.classList.add("active");
-    }
-    function cancel(){
-        const navbar = document.querySelector(".dropdown");
-        if(navbar) navbar.classList.remove("active");
-    }
-</script>
-
-</body>
 </html>
-
-
-
-
-
