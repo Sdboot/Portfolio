@@ -10,14 +10,14 @@ document.addEventListener('DOMContentLoaded', function() {
     if (window.innerWidth <= 768) {
       let maxScroll = aboutFlexRow.scrollWidth - aboutFlexRow.clientWidth;
       let direction = 1;
-       setInterval(function() {
-         if (!aboutFlexRow) return;
-           
-         aboutFlexRow.scrollLeft += direction;
-           
-         if (aboutFlexRow.scrollLeft >= maxScroll) direction = -1;
-         if (aboutFlexRow.scrollLeft <= 0) direction = 1;
-       }, 5); // Faster speed
+      setInterval(function() {
+        if (!aboutFlexRow) return;
+        
+        aboutFlexRow.scrollLeft += direction;
+        
+        if (aboutFlexRow.scrollLeft >= maxScroll) direction = -1;
+        if (aboutFlexRow.scrollLeft <= 0) direction = 1;
+      }, 10); 
     }
   }
   autoSlideAboutFlexRow();
