@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (aboutFlexRow.scrollLeft >= maxScroll) direction = -1;
         if (aboutFlexRow.scrollLeft <= 0) direction = 1;
-      }, 10); 
+      }, 20); 
     }
   }
   autoSlideAboutFlexRow();
