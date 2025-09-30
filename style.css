@@ -134,6 +134,10 @@ section{
   padding-bottom: 2rem;
     border-radius: 50px;
 }
+.main-container .image img:hover {
+    transform: scale(1.05) rotate(-2deg);
+    box-shadow: 0 16px 48px rgba(109,67,0,0.28), 0 3px 16px rgba(247,200,115,0.23);
+}
 
 .main-container .content{
     color: black;
@@ -220,9 +224,11 @@ section{
     filter: drop-shadow(0 0 10px rgb(109,67,0));
 }
 
-.btn button {
-    width: 40%;
-    height: 6vh;
+.btn a {
+    display: inline-block;
+    padding: 8px 20px;
+    width: 10%;
+    height: 3vh;
     margin: 50px;
     background-color: rgb(109,67,0);
     color: white;
@@ -234,7 +240,7 @@ section{
     transition: 0.2s linear;
 }
 
-.btn button:hover {
+.btn a:hover {
     scale: 1.1;
     color: rgb(109,67,0);
     border: 2px solid rgb(109,67,0);
@@ -247,7 +253,7 @@ section{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     
     html, body {
         width: 100vw !important;
@@ -316,7 +322,8 @@ section{
     width: 100%;
 }
 
-  
+
+
   
   .main-container {
     flex-direction: column;
@@ -332,16 +339,18 @@ section{
   }
 
   .main-container .image img {
-    width: 230px;
+    width: 250px;
     height: 200px;
     object-fit: contain;
   }
-  .btn button {
-   width : 150px;
-   margin-left: 10px;
+  
+  .btn a {
+   width : 70px;
+    height: 30px;
+    padding: 5px 10px 5px 10px;
    margin-bottom: 5rem ;
   }
-  .btn button a{
+  .btn a{
     color: #fff;
   }
     .typewriter span::after {
@@ -406,7 +415,7 @@ section{
     color: #6d4300;
     text-align: center;
 }
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 1200px) {
     .about-container{
         padding: 0.5rem;
     }
@@ -423,19 +432,18 @@ section{
     .about-flex-row {
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         align-items: center;
         gap: 10px;
-        overflow-x: auto;
-        overflow-y: hidden;
-        scroll-behavior: smooth;
-        -webkit-overflow-scrolling: touch;
+        overflow-x: unset;
+        overflow-y: unset;
+        scroll-behavior: unset;
         margin: 0 !important;
         padding: 0 !important;
     }
     .about-flex-row .about-flex {
         min-width: 120px;
-        flex: 0 0 auto;
+        flex: 1 1 120px;
     }
     .about-flex-row::-webkit-scrollbar {
         display: none;
@@ -445,11 +453,116 @@ section{
         height: 50px;
     }
 }
+/* ...existing code... */
+
+/* Dark Mode Toggle Button */
+#dark-mode-toggle {
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
+  z-index: 9999;
+  background: #fff;
+  color: #6d4300;
+  border: 2px solid #6d4300;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(109,67,0,0.07);
+  transition: background 0.3s, color 0.3s;
+}
+#dark-mode-toggle:hover {
+  background: #6d4300;
+  color: #fff;
+}
+
+/* Scroll-to-Top Button */
+#scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  background: #fff;
+  color: #6d4300;
+  border: 2px solid #6d4300;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(109,67,0,0.07);
+  display: none;
+  transition: background 0.3s, color 0.3s;
+}
+#scroll-to-top:hover {
+  background: #6d4300;
+  color: #fff;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background: linear-gradient(to right,#232323,#3a2c0a);
+  color: #fff;
+}
+body.dark-mode nav,
+body.dark-mode footer {
+  background: linear-gradient(to right,#232323,#3a2c0a);
+  color: #fff;
+}
+body.dark-mode .logo span,
+body.dark-mode .project-container h1,
+body.dark-mode .side-1 h1,
+body.dark-mode .side-2 h3,
+body.dark-mode .side-1 h2 a,
+body.dark-mode .content h1 span,
+body.dark-mode .content .typewriter span,
+body.dark-mode .about-flex-row h3 {
+  color: #fff;
+}
+body.dark-mode .social-links a i {
+  color: #fff;
+}
+body.dark-mode .about-container h1{
+    color: #f7c873;
+}
+body.dark-mode .projects-list,
+body.dark-mode .about-flex-row img {
+  background: #232323;
+  color: #fff;
+  box-shadow: 0 2px 8px #f7c87333;
+}
+body.dark-mode .nav-container .links a,
+body.dark-mode .nav-container .contact-btn a,
+body.dark-mode .btn a {
+  color: #fff !important;
+}
+body.dark-mode .btn a {
+  background: rgb(109,67,0);
+  border: 2px solid #f7c873;
+}
+body.dark-mode .btn a:hover {
+  background: #f7c873;
+  color: #232323 !important;
+  border: 2px solid #232323;
+}
+body.dark-mode #dark-mode-toggle,
+body.dark-mode #scroll-to-top {
+  background: #232323;
+  color: #f7c873;
+  border-color: #f7c873;
+}
+body.dark-mode #dark-mode-toggle:hover,
+body.dark-mode #scroll-to-top:hover {
+  background: #f7c873;
+  color: #232323;
+}
 
 .project-container h1{
     padding-top: 90px;
 text-align: center;
-color: rgb(109,67,0);
+color: rgb(109,67,0) !important;
+font: sans-serif;
 font-size: 2.5rem;
 }
 
@@ -496,7 +609,26 @@ font-size: 2.5rem;
     background: none;
     margin-bottom: 1rem;
 }
- @media screen and (max-width: 768px) {
+
+
+.project-list {
+  transition: all 0.3s;
+}
+.more-info-btn {
+  margin-bottom: 8px;
+  background: #6d4300;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 16px;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+.more-info-btn:hover {
+  background: #f7c873;
+  color: #232323;
+}
+ @media screen and (max-width: 1200px) {
     
     .project-container h1{
         font-size: 1.4rem;
@@ -509,10 +641,11 @@ font-size: 2.5rem;
 
 footer {
     width: 100%;
-    height: 40vh;
+    height: 45vh;
+    overflow: hidden;
     background: linear-gradient(to right, #f7c873 0%, #fffbe6 100%);
     color: #3a2c0a;
-    padding: 2rem 0 1rem 0;
+    padding: 2rem 0 7rem 0;
     margin-top: 2rem;
     border-radius: 16px 16px 0 0;
     box-shadow: 0 -2px 16px rgba(247,200,115,0.13);
@@ -539,12 +672,14 @@ footer {
 .side-2 {
     text-align: center;
     margin-right: 50px;
+
 }
 .side-2 .social-links {
     display: flex;
     justify-content: center;
     gap: 1rem;
-
+    margin-bottom: 60px;
+   
 }
 .side-2 .social-links a {
     color: #3a2c0a;
@@ -554,9 +689,9 @@ footer {
 .side-2 .social-links a:hover {
     color: #f7a600;
 }
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     footer{
-        height: 50vh;
+        height: 35vh;
     }
     .side-1 h1, .side-2 h3 {
     color: rgb(109,67,0);
@@ -576,6 +711,7 @@ footer {
         justify-content: center;
         margin-bottom: 150px;
         gap: 0;
+        margin-left: 2.5rem;
     }
     .side-2 .social-links a {
         font-size: 0.7rem !important;
