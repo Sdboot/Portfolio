@@ -342,6 +342,7 @@ section{
     width: 250px;
     height: 200px;
     object-fit: contain;
+    border-radius: 400px;
   }
   
   .btn a {
