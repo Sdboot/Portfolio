@@ -904,7 +904,8 @@ body.dark-mode #scroll-to-top:hover {
     }
     
     .projects-list img {
-        height: 170px;
+        height: 200px;
+        width: 80%;
     }
     
     .more-info-btn {
