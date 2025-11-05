@@ -538,50 +538,9 @@ section{
 .about-flex-row .about-flex {
     cursor: pointer;
 }
- @media screen and (max-width: 1200px) {
-    .about-container {
-        padding: 1rem;
-    }
-    
-    .about-container h1 {
-        font-size: 1.8rem;
-        padding-bottom: 2rem;
-    }
-    
-    .about-container p {
-        font-size: 1rem;
-        text-align: center;
-        margin: 0 auto;
-        padding: 0 1rem 2rem 1rem;
-        max-width: 800px;
-        line-height: 1.6;
-    }
-    
-    .about-flex-row {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 1.5rem;
-        padding: 0 1rem;
-        margin: 2rem auto;
-    }
-    
-    .about-flex-row .about-flex {
-        padding: 1.5rem;
-        min-height: 180px;
-    }
-    
-    .about-flex-row img {
-        width: 80px;
-        height: 80px;
-        padding: 0.8rem;
-    }
-    
-    .about-flex-row h3 {
-        font-size: 1rem;
-        margin-top: 1rem;
-    }
-}
 
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 1200px) {
     .about-flex-row {
         grid-template-columns: repeat(6, 1fr);
         gap: 0.5rem;
@@ -618,9 +577,8 @@ section{
         100% { transform: translateZ(0) rotateX(0) rotateY(0); }
     }
 }
-/* ...existing code... */
 
-/* Dark Mode Toggle Button */
+/* Dark Mode  */
 #dark-mode-toggle {
   position: fixed;
   bottom: 90px;
