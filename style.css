@@ -886,7 +886,7 @@ body.dark-mode #scroll-to-top:hover {
     }
     
     .list {
-        margin: 1rem;
+        margin: 2.2rem;
         padding-top: 1rem;
         gap: 1.3rem;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
