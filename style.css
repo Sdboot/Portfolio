@@ -541,6 +541,14 @@ section{
 
 
 @media screen and (max-width: 1200px) {
+
+    .about-container h1 {
+        font-size: 1.5rem;
+    }
+    .about-container p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
     .about-flex-row {
         grid-template-columns: repeat(6, 1fr);
         gap: 0.5rem;
@@ -568,6 +576,7 @@ section{
     .about-flex-row .about-flex:hover {
         transform: translateZ(20px);
     }
+
 
     @keyframes floating {
         0% { transform: translateZ(0) rotateX(0) rotateY(0); }
