@@ -149,12 +149,13 @@ section{
     width: 100%;
     min-height: 60vh;
     padding: 2rem 0;
-    margin-top: 80px; 
+    margin-top: 80px;
+    box-sizing: border-box;
 }
 
 .main-container{
     padding-top: 100px;
-    width: 100%;
+    width: 100% !important;
     height: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -327,7 +328,7 @@ section{
     .project-container {
         width: 100% !important;
         margin: 0 !important;
-        padding: 0 !important;
+        padding: 2rem 1.5rem !important;
         box-sizing: border-box;
     }
 
@@ -468,9 +469,9 @@ section{
   text-align: center;
 }
 .about-container p{
-    padding-right: 20px;
+    padding-right: 0;
+    padding-left: 0;
     text-align: center;
-
     font-size: 1.4rem;
 }
 
@@ -482,8 +483,9 @@ section{
     align-items: stretch;
     margin: 2rem auto;
     max-width: 1200px;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     perspective: 1000px;
+    box-sizing: border-box;
 }
 
 .about-flex-row .about-flex {
@@ -811,10 +813,13 @@ body.dark-mode .hamburger span {
 .list {
     margin: 2rem auto;
     padding-top: 70px;
+    padding-left: 1rem;
+    padding-right: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2.5rem;
     max-width: 1400px;
+    box-sizing: border-box;
 }
 
 .projects-list {
@@ -1011,6 +1016,7 @@ body.dark-mode .hamburger span {
     background: linear-gradient(135deg, #f8fafc 0%, #f7c873 100%);
     min-height: 100vh;
     margin-top: 0;
+    box-sizing: border-box;
 }
 
 .contact-header {
@@ -1048,6 +1054,7 @@ body.dark-mode .hamburger span {
     width: 100%;
     margin: 2rem auto;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .contact-info {
@@ -1333,7 +1340,6 @@ footer {
     width: 100%;
     height: 45vh;
     overflow: hidden;
-    
     color: #3a2c0a;
     padding: 2rem 0 7rem 0;
     margin-top: 2rem;
