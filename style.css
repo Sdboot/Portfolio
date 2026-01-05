@@ -5,6 +5,25 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Keyframe Animations for About Section */
+@keyframes floatImage {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes glowPulse {
+    0%, 100% {
+        box-shadow: 0 4px 12px rgba(109,67,0,0.1);
+    }
+    50% {
+        box-shadow: 0 4px 20px rgba(247,200,115,0.4);
+    }
+}
+
 body{
     width: 100%;
     background: linear-gradient(to right,rgb(255,255,255),rgb(254,215,173));
@@ -533,11 +552,13 @@ section{
     transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(109,67,0,0.1);
     object-fit: contain;
+    animation: floatImage 3s ease-in-out infinite, glowPulse 2.5s ease-in-out infinite;
 }
 
 .about-flex-row .about-flex:hover img {
-    transform: scale(1.1);
-    box-shadow: 0 6px 16px rgba(247,200,115,0.3);
+    transform: scale(1.2) rotateY(10deg);
+    box-shadow: 0 8px 20px rgba(247,200,115,0.5);
+    animation: floatImage 2s ease-in-out infinite;
 }
 
 .about-flex-row h3 {
