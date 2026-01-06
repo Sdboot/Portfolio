@@ -606,7 +606,9 @@ section{
 @media screen and (max-width: 1200px) {
 
     .about-container h1 {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
+        margin-bottom: 2.5rem;
+        margin-top: 2rem;
     }
     .about-container p {
         font-size: 1rem;
@@ -620,7 +622,7 @@ section{
     
     .about-flex-row .about-flex {
         padding: 0.4rem;
-
+    }
     
     .about-flex-row img {
         width: 40px;
