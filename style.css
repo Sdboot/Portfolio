@@ -544,7 +544,7 @@ section{
     align-items: start;
     margin: 2rem auto;
     max-width: 1000px;
-    padding: 0 1rem;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -554,7 +554,7 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 1rem;
+    padding: 0.4rem;
     background: #ffffff;
     border-radius: 12px;
     transition: all 0.3s ease;
@@ -572,7 +572,7 @@ section{
 }
 
 .about-flex-row img {
-    width: 50px;
+    width: 40px;
     height: 30px;
     border-radius: 12px;
     position: relative;
@@ -610,17 +610,17 @@ section{
     }
     .about-container p {
         font-size: 1rem;
-        padding: 0 1rem;
+        padding: 0 ;
     }
     .about-flex-row {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: 1.2rem;
+        gap: 1rem;
         padding: 0 0.5rem;
     }
     
     .about-flex-row .about-flex {
-        padding: 1rem;
-    }
+        padding: 0.4rem;
+
     
     .about-flex-row img {
         width: 40px;
